@@ -5,11 +5,13 @@ import (
 	"path/filepath"
 	"time"
 
+	"egorgodd.net/snippetbox/pkg/forms"
 	"egorgodd.net/snippetbox/pkg/models"
 )
 
 type templateData struct {
 	CurrentYear int
+	Form        *forms.Form
 	Snippet     *models.Snippet
 	Snippets    []*models.Snippet
 }
